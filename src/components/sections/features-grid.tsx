@@ -6,23 +6,23 @@ import { motion } from 'framer-motion';
 
 const features = [
   {
-    category: 'CLIMB',
-    title: 'THE WALLS',
-    description: 'Expertly designed routes for all skill levels, from beginners to seasoned pros.',
-    image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/c433bee3-8099-4ea8-801c-2a29545c0d97-wix-com/assets/images/images_3.png',
+    category: 'CARDIO',
+    title: 'ENDURANCE ZONE',
+    description: 'High-energy cardio spaces designed to boost stamina, improve heart health, and maximize calorie burn.',
+    image: '/pexels-tima-miroshnichenko-6388514.jpg',
+  },
+  {
+    category: 'YOGA',
+    title: 'YOGA FLOW',
+    description: 'A refined space for recovery, flexibility, and mental clarity through guided yoga practice.',
+    image: '/pexels-noe-de-angelis-299522260-13423698.jpg',
   },
   {
     category: 'BODY',
-    title: 'THE TRAINING',
-    description: 'Specialized fitness areas and equipment to build your strength and endurance.',
-    image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/c433bee3-8099-4ea8-801c-2a29545c0d97-wix-com/assets/images/images_4.png',
-  },
-  {
-    category: 'ADVENTURE',
-    title: 'THE COMMUNITY',
-    description: 'Vibrant social spaces to connect with fellow climbers and plan your next ascent.',
-    image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/c433bee3-8099-4ea8-801c-2a29545c0d97-wix-com/assets/images/images_5.png',
-  },
+    title: 'STRENGTH ZONE',
+    description: 'Purpose-built training zones and equipment designed to increase strength, endurance, and total body performance.',
+    image: '/pexels-shuvalova-natalia-415991090-18723748.jpg',
+  }
 ];
 
 export default function FeaturesGrid() {
@@ -46,8 +46,8 @@ export default function FeaturesGrid() {
   };
 
   return (
-    <section className="bg-[#f9f9f9] w-full border-t border-black/10">
-      <motion.div 
+    <section className="bg-white w-full border-t border-black/10">
+      <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
@@ -55,19 +55,18 @@ export default function FeaturesGrid() {
         className="grid grid-cols-1 md:grid-cols-3 w-full"
       >
         {features.map((feature, index) => (
-          <motion.div 
-            key={index} 
+          <motion.div
+            key={index}
             variants={itemVariants}
-            className={`flex flex-col border-black/10 ${
-              index !== features.length - 1 ? 'md:border-r border-b md:border-b-0' : 'border-b md:border-b-0'
-            }`}
+            className={`flex flex-col border-black/10 ${index !== features.length - 1 ? 'md:border-r border-b md:border-b-0' : 'border-b md:border-b-0'
+              }`}
           >
             {/* Image Container */}
             <div className="relative aspect-[4/3] w-full overflow-hidden group">
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.8 }}
-                className="w-full h-full"
+                className="w-full h-full relative"
               >
                 <Image
                   src={feature.image}
@@ -81,7 +80,7 @@ export default function FeaturesGrid() {
             </div>
 
             {/* Content Container */}
-            <div className="p-10 flex flex-col h-full bg-[#f9f9f9] group">
+            <div className="p-10 flex flex-col h-full bg-white group">
               <span className="text-[16px] font-bold uppercase tracking-[0.05em] text-black mb-4">
                 {feature.category}
               </span>
@@ -91,21 +90,21 @@ export default function FeaturesGrid() {
               <p className="text-[16px] leading-[1.6] text-black/80 font-medium">
                 {feature.description}
               </p>
-              
+
               <div className="mt-auto pt-10">
-                <motion.a 
+                <motion.a
                   whileHover={{ x: 10 }}
-                  href="/services" 
+                  href="/services"
                   className="inline-flex items-center text-[14px] font-bold uppercase tracking-[0.1em] text-[#E4480B] hover:opacity-80 transition-opacity"
                 >
                   LEARN MORE
-                  <svg 
-                    className="ml-2 w-4 h-4" 
-                    viewBox="0 0 24 24" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    strokeWidth="3" 
-                    strokeLinecap="round" 
+                  <svg
+                    className="ml-2 w-4 h-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    strokeLinecap="round"
                     strokeLinejoin="round"
                   >
                     <path d="M5 12h14m-7-7 7 7-7 7" />
@@ -116,7 +115,7 @@ export default function FeaturesGrid() {
           </motion.div>
         ))}
       </motion.div>
-      
+
       {/* Bottom Border Divider */}
       <div className="w-full border-b border-black/10"></div>
     </section>

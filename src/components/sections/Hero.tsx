@@ -43,11 +43,11 @@ const Hero = () => {
             <span className="text-[12px] font-bold tracking-[0.1em] text-black uppercase mb-auto pt-1 md:pt-4">
               BODY, CLIMB, ADVENTURE
             </span>
-            
+
             <div className="mt-8 md:mt-24">
               <a
                 href="#join"
-                className="bg-[#D93E0B] hover:bg-[#B03209] text-white px-[36px] py-[14px] rounded-full text-[14px] font-extrabold uppercase tracking-wider transition-colors duration-300 inline-flex items-center justify-center whitespace-nowrap"
+                className="bg-[#D93E0B] hover:bg-[#B03209] text-white px-[36px] py-[14px]  text-[14px] font-extrabold uppercase tracking-wider transition-colors duration-300 inline-flex items-center justify-center whitespace-nowrap"
               >
                 JOIN NOW
               </a>

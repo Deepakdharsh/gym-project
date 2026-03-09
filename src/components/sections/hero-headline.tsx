@@ -31,7 +31,7 @@ const HeroHeadline = () => {
             
             <a 
               href="#"
-              className="btn-primary inline-flex items-center justify-center bg-[#E4440C] text-white rounded-full px-[35px] py-[15px] font-bold uppercase text-[14px] transition-opacity hover:opacity-85"
+              className="btn-primary inline-flex items-center justify-center bg-[#E4440C] text-white  px-[35px] py-[15px] font-bold uppercase text-[14px] transition-opacity hover:opacity-85"
             >
               JOIN NOW
             </a>

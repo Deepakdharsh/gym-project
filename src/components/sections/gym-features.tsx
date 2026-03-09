@@ -7,37 +7,37 @@ import { motion } from 'framer-motion';
 const GymFeatures = () => {
   const features = [
     {
-      title: "CLIMB",
-      description: "Experience world-class bouldering and sport climbing routes designed for all skill levels, from beginners to elite athletes.",
-      image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/c433bee3-8099-4ea8-801c-2a29545c0d97-wix-com/assets/images/images_2.png",
-      alt: "Close-up of vibrant climbing holds on a grey wall texture"
+      title: "PLAY ZONE",
+      description: "Blow off some steam between sets. Challenge your friends to a quick game of carrom or 8-pool to keep the energy high.",
+      image: "/pexels-narmin-aslanli-701641061-32154902.jpg",
+      alt: "Modern gym equipment lined up in a spacious workout area"
     },
     {
-      title: "COMMUNITY",
-      description: "Join a vibrant ecosystem of climbers. Our gym is more than just a facility; it's a place to connect, learn, and grow together.",
-      image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/c433bee3-8099-4ea8-801c-2a29545c0d97-wix-com/assets/images/images_3.png",
-      alt: "Spacious gym interior with climbing walls and social areas"
+      title: "KNOWLEDGE HUB",
+      description: "Fuel your mind while you rest your body. Browse our curated collection of fitness journals, nutrition guides, and wellness books.",
+      image: "/pexels-vikeph-25460116.jpg",
+      alt: "Personal trainer assisting a gym member with weightlifting form"
     },
     {
-      title: "TRAINING",
-      description: "Elevate your performance with our dedicated training zone, featuring campus boards, hangboards, and specialized fitness equipment.",
-      image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/c433bee3-8099-4ea8-801c-2a29545c0d97-wix-com/assets/images/images_5.png",
-      alt: "Climber's hands reaching for colored holds on a training wall"
+      title: "GEAR SANTUARY",
+      description: "Keep your training shoes safe and separate. Dedicated, ventilated storage for your lifting shoes or sneakers so you can travel light.",
+      image: "/Untitled design.png",
+      alt: "Gym member relaxing in a recovery lounge area after a workout"
     }
   ];
 
   return (
-    <section className="bg-white py-[100px]">
-      <div className="container mx-auto px-10">
+    <section className="bg-white py-16 md:py-24 lg:py-[100px]">
+      <div className="container mx-auto px-6 md:px-10">
         {/* Section Header */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="flex flex-col md:flex-row justify-between items-baseline mb-[60px] border-b border-black/10 pb-4"
+          className="flex flex-col md:flex-row justify-between items-baseline mb-12 md:mb-[60px] border-b border-black/10 pb-4"
         >
-          <h2 className="text-[48px] font-[800] uppercase tracking-tighter leading-[0.9] text-black">
+          <h2 className="text-[36px] md:text-[48px] font-[800] uppercase tracking-tighter leading-[0.9] text-black">
             OUR FACILITY
           </h2>
           <span className="text-[12px] font-[700] uppercase tracking-[1px] text-black mt-4 md:mt-0">
@@ -48,8 +48,8 @@ const GymFeatures = () => {
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {features.map((feature, index) => (
-            <motion.div 
-              key={index} 
+            <motion.div
+              key={index}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -82,8 +82,8 @@ const GymFeatures = () => {
                   {feature.description}
                 </p>
                 <div className="pt-2">
-                  <a 
-                    href="/services" 
+                  <a
+                    href="/services"
                     className="text-[14px] font-[700] uppercase tracking-[0.5px] text-[#E4440C] border-b-2 border-transparent hover:border-[#E4440C] transition-all"
                   >
                     Learn More
@@ -96,7 +96,7 @@ const GymFeatures = () => {
 
         {/* Secondary Detail Section */}
         <div className="mt-[100px] grid grid-cols-1 lg:grid-cols-2 gap-0 border-t border-black/10">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -107,12 +107,12 @@ const GymFeatures = () => {
               STATE-OF-THE-ART EQUIPMENT
             </span>
             <h2 className="text-[48px] font-[800] uppercase tracking-tighter leading-[0.9] text-black mb-8">
-              BEYOND THE <br /> VERTICAL
+              THE <br /> GREAT ROOM
             </h2>
             <p className="text-[18px] leading-[1.6] text-black font-normal mb-10 max-w-xl">
-              Our 15,000 sq ft facility is designed with the modern climber in mind. We provide the tools, you provide the drive. From our high-friction wall textures to our competition-grade route setting, every detail is optimized for your climbing progression.
+              From heavy-lifting platforms to dedicated functional turf, our expansive space provides the room you need to move, stretch, and crush your goals without the crowd.
             </p>
-            <motion.a 
+            <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               href="/membership"
@@ -121,8 +121,8 @@ const GymFeatures = () => {
               Explore Our Routes
             </motion.a>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, scale: 1.1 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -130,7 +130,7 @@ const GymFeatures = () => {
             className="relative h-[400px] lg:h-auto min-h-[500px] overflow-hidden"
           >
             <Image
-              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/c433bee3-8099-4ea8-801c-2a29545c0d97-wix-com/assets/images/images_4.png"
+              src="/pexels-estudiopolaroid-3112004.jpg"
               alt="Gym interior view showing the scale of the climbing walls"
               fill
               className="object-cover"

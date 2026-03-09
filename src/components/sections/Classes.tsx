@@ -6,15 +6,27 @@ import { motion } from 'framer-motion';
 
 const classesData = [
   {
-    title: "BOULDERING",
+    title: "CARDIO",
     description: "Focus on short, challenging routes without ropes. Perfect for building strength and technique in a social environment.",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/c433bee3-8099-4ea8-801c-2a29545c0d97-wix-com/assets/images/images_2.png",
+    image: "/photo-1590487988256-9ed24133863e.avif",
     alt: "Bouldering session at Ascend Heights"
   },
   {
-    title: "TOP ROPE & LEAD",
+    title: "YOGA",
     description: "Learn the fundamentals of rope climbing with our certified instructors. From your first belay to advanced lead climbing.",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/c433bee3-8099-4ea8-801c-2a29545c0d97-wix-com/assets/images/images_3.png",
+    image: "/photo-1585484764802-387ea30e8432.avif",
+    alt: "Rope climbing at Ascend Heights"
+  },
+  {
+    title: "BODYBUILDING",
+    description: "Learn the fundamentals of rope climbing with our certified instructors. From your first belay to advanced lead climbing.",
+    image: "/photo-1585484764802-387ea30e8432.avif",
+    alt: "Rope climbing at Ascend Heights"
+  },
+  {
+    title: "CALISTHENICS",
+    description: "Learn the fundamentals of rope climbing with our certified instructors. From your first belay to advanced lead climbing.",
+    image: "/photo-1585484764802-387ea30e8432.avif",
     alt: "Rope climbing at Ascend Heights"
   }
 ];
@@ -22,10 +34,10 @@ const classesData = [
 const Classes = () => {
   const fadeInUp = {
     hidden: { opacity: 0, y: 60 },
-    visible: { 
-      opacity: 1, 
-      y: 0, 
-      transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } 
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] }
     }
   };
 
@@ -40,35 +52,35 @@ const Classes = () => {
   };
 
   return (
-    <section id="services" className="bg-background py-[100px] md:py-[150px] overflow-hidden">
+    <section id="services" className="bg-background py-16 md:py-24 lg:py-[100px] overflow-hidden">
       <div className="container">
         {/* Section Header */}
-        <motion.div 
+        <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeInUp}
-          className="mb-12 md:mb-20"
+          className="mb-12 md:mb-16 lg:mb-20"
         >
           <span className="label-tag">OUR SERVICES</span>
-          <h2 className="text-[32px] md:text-[48px] font-bold leading-[0.9] tracking-[-0.02em] uppercase">
+          <h2 className="text-[32px] md:text-[40px] lg:text-[48px] font-bold leading-[0.9] tracking-[-0.02em] uppercase">
             CHOOSE YOUR<br />ADVENTURE
           </h2>
         </motion.div>
 
         {/* Classes Grid */}
-        <div className="space-y-16 md:space-y-32">
+        <div className="space-y-12 md:space-y-20 lg:space-y-32">
           {classesData.map((item, index) => (
-            <motion.div 
-              key={index} 
+            <motion.div
+              key={index}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-100px" }}
               variants={staggerContainer}
-              className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-24 items-center`}
+              className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-16 lg:gap-24 items-center`}
             >
               {/* Image Container */}
-              <motion.div 
+              <motion.div
                 variants={fadeInUp}
                 className="w-full md:w-1/2 aspect-[4/3] relative overflow-hidden"
               >
@@ -89,24 +101,24 @@ const Classes = () => {
               </motion.div>
 
               {/* Content Container */}
-              <motion.div 
+              <motion.div
                 variants={fadeInUp}
                 className="w-full md:w-1/2 flex flex-col justify-center"
               >
-                <h3 className="text-[40px] md:text-[60px] font-extrabold leading-[0.9] tracking-tight mb-6 md:mb-8 uppercase">
+                <h3 className="text-[36px] md:text-[48px] lg:text-[60px] font-extrabold leading-[0.9] tracking-tight mb-6 md:mb-8 uppercase">
                   {item.title}
                 </h3>
-                <p className="text-[16px] md:text-[18px] leading-[1.6] text-foreground max-w-[480px] mb-8 md:mb-12">
+                <p className="text-[16px] md:text-[17px] lg:text-[18px] leading-[1.6] text-foreground max-w-[480px] mb-6 md:mb-8 lg:mb-12">
                   {item.description}
                 </p>
                 <div>
-                  <motion.a 
+                  {/* <motion.a 
                     whileHover={{ x: 10 }}
                     href="#membership" 
                     className="inline-flex items-center gap-2 font-bold uppercase text-[14px] tracking-widest border-b border-black pb-1 hover:text-primary hover:border-primary transition-colors duration-300"
                   >
                     LEARN MORE
-                  </motion.a>
+                  </motion.a> */}
                 </div>
               </motion.div>
             </motion.div>
@@ -114,7 +126,7 @@ const Classes = () => {
         </div>
 
         {/* Extra Services Banner */}
-        <motion.div 
+        {/* <motion.div 
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
@@ -134,7 +146,7 @@ const Classes = () => {
               </p>
             </motion.div>
           ))}
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
