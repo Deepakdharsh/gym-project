@@ -15,7 +15,7 @@ const SplitText = ({ children, className }: { children: string, className?: stri
             animate={{ y: 0 }}
             transition={{
               duration: 1.2,
-              ease: [0.33, 1, 0.68, 1],
+              ease: [0.33, 1, 0.68, 1] as any,
               delay: 0.4 + (i * 0.1)
             }}
             className="inline-block"
@@ -34,7 +34,7 @@ const HeroContent = () => {
       <motion.div
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 1 }}
-        transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] as any }}
         className="w-full border-t border-black/10 mx-0 origin-left"
       ></motion.div>
 

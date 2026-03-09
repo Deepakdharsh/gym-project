@@ -53,7 +53,7 @@ const pricingData: PricingTier[] = [
 ];
 
 const Rates: React.FC = () => {
-  const fadeInUp = {
+  const fadeInUp: any = {
     hidden: { opacity: 0, y: 60 },
     visible: {
       opacity: 1,
@@ -62,7 +62,7 @@ const Rates: React.FC = () => {
     }
   };
 
-  const staggerContainer = {
+  const staggerContainer: any = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,

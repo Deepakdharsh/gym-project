@@ -26,7 +26,7 @@ const features = [
 ];
 
 export default function FeaturesGrid() {
-  const containerVariants = {
+  const containerVariants: any = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -36,7 +36,7 @@ export default function FeaturesGrid() {
     }
   };
 
-  const itemVariants = {
+  const itemVariants: any = {
     hidden: { y: 50, opacity: 0 },
     visible: {
       y: 0,

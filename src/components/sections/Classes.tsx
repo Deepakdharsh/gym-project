@@ -32,7 +32,7 @@ const classesData = [
 ];
 
 const Classes = () => {
-  const fadeInUp = {
+  const fadeInUp: any = {
     hidden: { opacity: 0, y: 60 },
     visible: {
       opacity: 1,
@@ -41,7 +41,7 @@ const Classes = () => {
     }
   };
 
-  const staggerContainer = {
+  const staggerContainer: any = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,

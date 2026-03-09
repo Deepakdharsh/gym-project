@@ -1,0 +1,35 @@
+
+> gym-project@0.1.0 build
+> next build
+
+▲ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 3.2s
+  Running TypeScript ...
+Failed to compile.
+
+./src/components/sections/features-grid.tsx:60:13
+Type error: Type '{ hidden: { y: number; opacity: number; }; visible: { y: number; opacity: number; transition: { duration: number; ease: number[]; }; }; }' is not assignable to type 'Variants'.
+  Property 'visible' is incompatible with index signature.
+    Type '{ y: number; opacity: number; transition: { duration: number; ease: number[]; }; }' is not assignable to type 'Variant'.
+      Type '{ y: number; opacity: number; transition: { duration: number; ease: number[]; }; }' is not assignable to type 'TargetAndTransition'.
+        Type '{ y: number; opacity: number; transition: { duration: number; ease: number[]; }; }' is not assignable to type '{ transition?: Transition<any> | undefined; transitionEnd?: ResolvedValues$1 | undefined; }'.
+          Types of property 'transition' are incompatible.
+            Type '{ duration: number; ease: number[]; }' is not assignable to type 'Transition<any> | undefined'.
+              Type '{ duration: number; ease: number[]; }' is not assignable to type 'TransitionWithValueOverrides<any>'.
+                Type '{ duration: number; ease: number[]; }' is not assignable to type 'ValueAnimationTransition<any>'.
+                  Types of property 'ease' are incompatible.
+                    Type 'number[]' is not assignable to type 'Easing | Easing[] | undefined'.
+                      Type 'number[]' is not assignable to type 'EasingFunction | Easing[]'.
+                        Type 'number[]' is not assignable to type 'Easing[]'.
+                          Type 'number' is not assignable to type 'Easing'.
+
+[0m [90m 58 |[39m           [33m<[39m[33mmotion[39m[33m.[39mdiv
+ [90m 59 |[39m             key[33m=[39m{index}
+[31m[1m>[22m[39m[90m 60 |[39m             variants[33m=[39m{itemVariants}
+ [90m    |[39m             [31m[1m^[22m[39m
+ [90m 61 |[39m             className[33m=[39m{[32m`flex flex-col border-black/10 ${index !== features.length - 1 ? 'md:border-r border-b md:border-b-0' : 'border-b md:border-b-0'[39m
+ [90m 62 |[39m [32m              }`[39m}
+ [90m 63 |[39m           [33m>[39m[0m
+Next.js build worker exited with code: 1 and signal: null

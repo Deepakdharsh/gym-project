@@ -18,7 +18,7 @@ const SplitText = ({ children, className }: { children: string, className?: stri
             viewport={{ once: true, margin: "-50px" }}
             transition={{
               duration: 1.2,
-              ease: [0.16, 1, 0.3, 1], // OutExpo
+              ease: [0.16, 1, 0.3, 1] as any, // OutExpo
               delay: i * 0.08
             }}
             className="inline-block"
@@ -32,7 +32,7 @@ const SplitText = ({ children, className }: { children: string, className?: stri
 };
 
 const MissionSection: React.FC = () => {
-  const itemVariants = {
+  const itemVariants: any = {
     hidden: { y: 60, opacity: 0 },
     visible: {
       y: 0,
@@ -135,7 +135,7 @@ const MissionSection: React.FC = () => {
               transition={{
                 duration: 1.5,
                 delay: idx * 0.15,
-                ease: [0.16, 1, 0.3, 1]
+                ease: [0.16, 1, 0.3, 1] as any
               }}
               className="col-span-12 md:col-span-4 group relative overflow-hidden p-8 sm:p-10 md:p-12 border-b md:border-b-0 md:border-r border-black/10 last:border-r-0 hover:bg-black transition-colors duration-700 ease-in-out"
             >

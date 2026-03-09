@@ -1,0 +1,22 @@
+
+> gym-project@0.1.0 build
+> next build
+
+▲ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 3.4s
+  Running TypeScript ...
+Failed to compile.
+
+./src/components/ui/chart.tsx:109:3
+Type error: Property 'payload' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; allowEscapeViewBox?: AllowInDimension | undefined; ... 24 more ...; wrapperStyle?: CSSProperties | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+
+[0m [90m 107 |[39m [36mfunction[39m [33mChartTooltipContent[39m({
+ [90m 108 |[39m   active[33m,[39m
+[31m[1m>[22m[39m[90m 109 |[39m   payload[33m,[39m
+ [90m     |[39m   [31m[1m^[22m[39m
+ [90m 110 |[39m   className[33m,[39m
+ [90m 111 |[39m   indicator [33m=[39m [32m"dot"[39m[33m,[39m
+ [90m 112 |[39m   hideLabel [33m=[39m [36mfalse[39m[33m,[39m[0m
+Next.js build worker exited with code: 1 and signal: null

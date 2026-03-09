@@ -1,0 +1,35 @@
+
+> gym-project@0.1.0 build
+> next build
+
+▲ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 3.2s
+  Running TypeScript ...
+Failed to compile.
+
+./src/components/sections/PromoGrid.tsx:44:24
+Type error: Type '{ hidden: { opacity: number; y: number; }; visible: { opacity: number; y: number; transition: { duration: number; ease: number[]; }; }; }' is not assignable to type 'Variants'.
+  Property 'visible' is incompatible with index signature.
+    Type '{ opacity: number; y: number; transition: { duration: number; ease: number[]; }; }' is not assignable to type 'Variant'.
+      Type '{ opacity: number; y: number; transition: { duration: number; ease: number[]; }; }' is not assignable to type 'TargetAndTransition'.
+        Type '{ opacity: number; y: number; transition: { duration: number; ease: number[]; }; }' is not assignable to type '{ transition?: Transition<any> | undefined; transitionEnd?: ResolvedValues$1 | undefined; }'.
+          Types of property 'transition' are incompatible.
+            Type '{ duration: number; ease: number[]; }' is not assignable to type 'Transition<any> | undefined'.
+              Type '{ duration: number; ease: number[]; }' is not assignable to type 'TransitionWithValueOverrides<any>'.
+                Type '{ duration: number; ease: number[]; }' is not assignable to type 'ValueAnimationTransition<any>'.
+                  Types of property 'ease' are incompatible.
+                    Type 'number[]' is not assignable to type 'Easing | Easing[] | undefined'.
+                      Type 'number[]' is not assignable to type 'EasingFunction | Easing[]'.
+                        Type 'number[]' is not assignable to type 'Easing[]'.
+                          Type 'number' is not assignable to type 'Easing'.
+
+[0m [90m 42 |[39m         [33m>[39m
+ [90m 43 |[39m           [33m<[39m[33mdiv[39m className[33m=[39m[32m"max-w-4xl"[39m[33m>[39m
+[31m[1m>[22m[39m[90m 44 |[39m             [33m<[39m[33mmotion[39m[33m.[39mh2 variants[33m=[39m{fadeInUp} className[33m=[39m[32m"text-[40px] sm:text-[48px] md:text-[64px] lg:text-[80px] font-[900] tracking-tighter leading-[0.85] uppercase text-black mb-4 sm:mb-6"[39m[33m>[39m
+ [90m    |[39m                        [31m[1m^[22m[39m
+ [90m 45 |[39m               [33mREACH[39m [33mNEW[39m [33m<[39m[33mbr[39m className[33m=[39m[32m"hidden sm:block"[39m [33m/[39m[33m>[39m [33mHEIGHTS[39m
+ [90m 46 |[39m             [33m<[39m[33m/[39m[33mmotion[39m[33m.[39mh2[33m>[39m
+ [90m 47 |[39m             [33m<[39m[33mmotion[39m[33m.[39mp variants[33m=[39m{fadeInUp} className[33m=[39m[32m"text-sm sm:text-base md:text-[18px] font-medium leading-relaxed text-black/60 max-w-xl"[39m[33m>[39m[0m
+Next.js build worker exited with code: 1 and signal: null
