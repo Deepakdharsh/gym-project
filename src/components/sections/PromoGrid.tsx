@@ -42,11 +42,10 @@ const PromoGrid: React.FC = () => {
         >
           <div className="max-w-4xl">
             <motion.h2 variants={fadeInUp} className="text-[40px] sm:text-[48px] md:text-[64px] lg:text-[80px] font-[900] tracking-tighter leading-[0.85] uppercase text-black mb-4 sm:mb-6">
-              REACH NEW <br className="hidden sm:block" /> HEIGHTS
+              PUSH YOUR LIMITS <br className="hidden sm:block" /> EVERY DAY
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-sm sm:text-base md:text-[18px] font-medium leading-relaxed text-black/60 max-w-xl">
-              Our state-of-the-art facility offers over 20,000 square feet of climbing terrain,
-              designed for every skill level from absolute beginners to professional athletes.
+              Train in a high-performance environment built to help you get stronger, faster, and better—no matter where you're starting from.
             </motion.p>
           </div>
 
@@ -126,7 +125,7 @@ const PromoGrid: React.FC = () => {
           </div>
 
           {/* Bottom Row */}
-          <motion.div variants={fadeInUp} className="md:col-span-4 relative group overflow-hidden bg-[#F7F7F7] aspect-square md:aspect-auto h-[300px] sm:h-[350px] md:h-[400px]">
+          <motion.div variants={fadeInUp} className="md:col-span-4 relative group overflow-hidden bg-[#F7F7F7] h-[300px] sm:h-[350px] md:h-[400px]">
             <motion.div
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.8 }}

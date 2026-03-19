@@ -103,12 +103,12 @@ const HeroImage = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/istockphoto-1215493509-612x612.jpg"
+            src="/new-landing-page-image.png"
             alt="Professional gym training with battle ropes"
             fill
             priority
             sizes="100vw"
-            className="object-cover object-center brightness-[0.65] sm:brightness-[0.5] md:brightness-[0.4]"
+            className="object-cover object-center brightness-[1] sm:brightness-[1] md:brightness-[1]"
           />
 
           {/* Responsive Gradient Overlay */}
@@ -116,7 +116,7 @@ const HeroImage = () => {
 
           {/* Diagonal Line Accent */}
           <div className="absolute top-0 left-[45%] w-[2px] h-full bg-[#E4480B] opacity-60 transform -skew-x-[20deg] hidden sm:block" />
-          <div className="absolute top-0 left-[85%] w-[1px] h-full bg-[#E4480B] opacity-30 transform -skew-x-[20deg] hidden md:block" />
+          <div className="absolute top-0 left-[85%] w-[2px] h-full bg-[#E4480B] opacity-30 transform -skew-x-[20deg] hidden md:block" />
         </div>
 
         {/* Content Overlay */}

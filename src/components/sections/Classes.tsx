@@ -8,26 +8,31 @@ const classesData = [
   {
     title: "CARDIO",
     description: "Focus on short, challenging routes without ropes. Perfect for building strength and technique in a social environment.",
-    image: "/photo-1590487988256-9ed24133863e.avif",
+    image: "/pexels-tima-miroshnichenko-6388522.jpg",
     alt: "Bouldering session at Ascend Heights"
   },
   {
     title: "YOGA",
-    description: "Learn the fundamentals of rope climbing with our certified instructors. From your first belay to advanced lead climbing.",
-    image: "/photo-1585484764802-387ea30e8432.avif",
-    alt: "Rope climbing at Ascend Heights"
+    description: "Improve flexibility, balance, and focus through guided yoga sessions suitable for all levels.",
+    image: "/pexels-leticia-negale-2671210-4239238.jpg",
+    alt: "People practicing yoga in a calm studio environment"
   },
   {
     title: "BODYBUILDING",
-    description: "Learn the fundamentals of rope climbing with our certified instructors. From your first belay to advanced lead climbing.",
-    image: "/photo-1585484764802-387ea30e8432.avif",
-    alt: "Rope climbing at Ascend Heights"
+    description: "Build strength and muscle with structured training programs and proper guidance.",
+    image: "/pexels-tima-miroshnichenko-5750626.jpg",
+    alt: "Person lifting weights during a bodybuilding workout"
   },
   {
     title: "CALISTHENICS",
-    description: "Learn the fundamentals of rope climbing with our certified instructors. From your first belay to advanced lead climbing.",
-    image: "/photo-1585484764802-387ea30e8432.avif",
-    alt: "Rope climbing at Ascend Heights"
+    description: "Train using bodyweight exercises to improve strength, control, and mobility.",
+    image: "/pexels-tima-miroshnichenko-6389082.jpg",
+    alt: "Person performing calisthenics exercises like pull-ups"
+  },{
+    title: "BOXING",
+    description: "Learn boxing techniques, improve endurance, and build confidence through training sessions.",
+    image: "/pexels-tima-miroshnichenko-5750819.jpg",
+    alt: "Person training with boxing gloves and punching bag"
   }
 ];
 

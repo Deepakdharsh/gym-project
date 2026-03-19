@@ -13,7 +13,7 @@ const features = [
   },
   {
     category: 'YOGA',
-    title: 'YOGA FLOW',
+    title: 'YOGA ZONE',
     description: 'A refined space for recovery, flexibility, and mental clarity through guided yoga practice.',
     image: '/pexels-noe-de-angelis-299522260-13423698.jpg',
   },
@@ -62,7 +62,7 @@ export default function FeaturesGrid() {
               }`}
           >
             {/* Image Container */}
-            <div className="relative aspect-[4/3] w-full overflow-hidden group">
+            <div className="relative aspect-[16/9] md:aspect-[4/3] w-full overflow-hidden group">
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.8 }}
@@ -80,18 +80,18 @@ export default function FeaturesGrid() {
             </div>
 
             {/* Content Container */}
-            <div className="p-10 flex flex-col h-full bg-white group">
-              <span className="text-[16px] font-bold uppercase tracking-[0.05em] text-black mb-4">
+            <div className="p-6 md:p-10 flex flex-col h-full bg-white group">
+              <span className="text-[14px] md:text-[16px] font-bold uppercase tracking-[0.05em] text-black mb-2 md:mb-4">
                 {feature.category}
               </span>
-              <h3 className="text-[42px] leading-[0.85] font-extrabold uppercase tracking-[-0.04em] text-black mb-6 group-hover:text-[#E4480B] transition-colors duration-300">
+              <h3 className="text-[32px] md:text-[42px] leading-[0.85] font-extrabold uppercase tracking-[-0.04em] text-black mb-4 md:mb-6 group-hover:text-[#E4480B] transition-colors duration-300">
                 {feature.title}
               </h3>
-              <p className="text-[16px] leading-[1.6] text-black/80 font-medium">
+              <p className="text-[14px] md:text-[16px] leading-[1.5] md:leading-[1.6] text-black/80 font-medium">
                 {feature.description}
               </p>
 
-              <div className="mt-auto pt-10">
+              <div className="mt-auto pt-6 md:pt-10">
                 <motion.a
                   whileHover={{ x: 10 }}
                   href="/services"

@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <>
       {/* NAVBAR */}
-      <nav className="fixed top-0 left-0 w-full h-20 bg-white shadow-md z-50 flex items-center justify-between px-6 md:px-12">
+      <nav className="fixed top-0 left-0 w-full h-20 bg-white shadow-md border-b-2 border-[#E4480B] z-50 flex items-center justify-between px-6 md:px-12">
         {/* Logo */}
         <div className="text-xl font-black tracking-wide">
           FITNESS STUDIO<span className="text-[#E4480B]">.</span>

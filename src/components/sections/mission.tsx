@@ -137,7 +137,7 @@ const MissionSection: React.FC = () => {
                 delay: idx * 0.15,
                 ease: [0.16, 1, 0.3, 1] as any
               }}
-              className="col-span-12 md:col-span-4 group relative overflow-hidden p-8 sm:p-10 md:p-12 border-b md:border-b-0 md:border-r border-black/10 last:border-r-0 hover:bg-black transition-colors duration-700 ease-in-out"
+              className="col-span-12 md:col-span-4 group relative overflow-hidden p-8 sm:p-10 md:p-12 border-b md:border-b-0 md:border-r border-black/10 last:border-r-0 hover:bg-black/70 transition-colors duration-700 ease-in-out"
             >
               {/* Decorative Number */}
               <span className="absolute top-8 right-8 text-[60px] md:text-[80px] font-black text-black/5 group-hover:text-white/5 transition-all duration-700 select-none pointer-events-none group-hover:-translate-y-2">

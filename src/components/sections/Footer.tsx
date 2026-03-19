@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-start mb-16 sm:mb-20 md:mb-[80px] gap-y-10 md:gap-y-12">
           <div className="max-w-[400px]">
             <h2 className="text-[20px] sm:text-[22px] md:text-[24px] font-[800] leading-[1] tracking-tight text-primary mb-4 sm:mb-6">
-              FITNESS STUDIO / GYM
+              FITNESS STUDIO.
             </h2>
             <p className="text-[14px] sm:text-[15px] md:text-[16px] leading-[1.6] text-foreground font-normal max-w-[320px]">
               More than a gym — a community built on strength, discipline, and consistent progress toward your goals.
@@ -63,7 +63,7 @@ const Footer = () => {
         {/* Bottom Section: Copyright and Credits */}
         <div className="pt-6 sm:pt-8 md:pt-10 border-t border-black/10 flex flex-col md:flex-row justify-center items-center gap-3 sm:gap-4">
           <p className="text-[10px] sm:text-[11px] md:text-[12px] text-[#757575] uppercase tracking-widest font-[600] text-center">
-            © {new Date().getFullYear()} FITNESS STUDIO / GYM. ALL RIGHTS RESERVED.
+            © {new Date().getFullYear()} FITNESS STUDIO. ALL RIGHTS RESERVED.
           </p>
           {/* <div className="flex gap-8">
             <a href="#" className="text-[12px] text-[#757575] font-[600] uppercase tracking-widest hover:text-black transition-colors">Privacy Policy</a>

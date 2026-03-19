@@ -19,7 +19,7 @@ const GymFeatures = () => {
       alt: "Personal trainer assisting a gym member with weightlifting form"
     },
     {
-      title: "GEAR SANTUARY",
+      title: "GEAR AREA",
       description: "Keep your training shoes safe and separate. Dedicated, ventilated storage for your lifting shoes or sneakers so you can travel light.",
       image: "/Untitled design.png",
       alt: "Gym member relaxing in a recovery lounge area after a workout"
@@ -103,11 +103,11 @@ const GymFeatures = () => {
             transition={{ duration: 1 }}
             className="py-12 pr-0 lg:pr-16"
           >
-            <span className="text-[12px] font-[700] uppercase tracking-[1px] text-black mb-6 block">
-              STATE-OF-THE-ART EQUIPMENT
-            </span>
+            {/* <span className="text-[12px] font-[700] uppercase tracking-[1px] text-black mb-6 block">
+              OUR EQUIPMENTS & SPACE
+            </span> */}
             <h2 className="text-[48px] font-[800] uppercase tracking-tighter leading-[0.9] text-black mb-8">
-              THE <br /> GREAT ROOM
+              OUR <br /> EQUIPMENTS & SPACE
             </h2>
             <p className="text-[18px] leading-[1.6] text-black font-normal mb-10 max-w-xl">
               From heavy-lifting platforms to dedicated functional turf, our expansive space provides the room you need to move, stretch, and crush your goals without the crowd.
