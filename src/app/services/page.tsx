@@ -4,7 +4,7 @@ import Footer from "@/components/sections/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Services & Classes",
+  title: "FITNESS STUDIO | Services",
   description: "Explore our fitness services and classes at FITNESS STUDIO Koorachundu. Personal training, group classes, strength training, cardio workouts, yoga, and specialized fitness programs for all levels.",
   keywords: "gym classes Kerala, personal training Koorachundu, group fitness, strength training, cardio classes, yoga Kerala, fitness programs",
   openGraph: {

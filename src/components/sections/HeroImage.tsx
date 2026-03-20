@@ -122,7 +122,7 @@ const HeroImage = () => {
         {/* Content Overlay */}
         <div className="relative z-10 w-full max-w-[1400px] mx-auto px-4 sm:px-6 md:px-12 lg:px-20">
           <div className="max-w-[900px] text-center sm:text-left mx-auto sm:mx-0">
-            
+
             {/* Main Heading */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -130,10 +130,10 @@ const HeroImage = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="flex flex-col items-center sm:items-start"
             >
-              <h1 className="text-white font-[900] leading-[0.85] text-[34px] sm:text-[48px] md:text-[56px] lg:text-[72px] xl:text-[80px] tracking-tighter uppercase italic">
+              <h1 className="text-white font-[900] leading-[0.85] text-[44px] sm:text-[48px] md:text-[56px] lg:text-[72px] xl:text-[80px] tracking-tighter uppercase italic">
                 ELEVATE YOUR
               </h1>
-              <h1 className="font-[900] leading-[0.85] text-[34px] sm:text-[48px] md:text-[56px] lg:text-[72px] xl:text-[80px] tracking-tighter uppercase italic mt-1 sm:mt-2">
+              <h1 className="font-[900] leading-[0.85] text-[44px] sm:text-[48px] md:text-[56px] lg:text-[72px] xl:text-[80px] tracking-tighter uppercase italic mt-1 sm:mt-2">
                 <span className="text-[#E4480B] drop-shadow-[0_0_15px_rgba(228,72,11,0.5)]">
                   FITNESS
                 </span>{" "}
