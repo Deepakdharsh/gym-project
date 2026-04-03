@@ -16,7 +16,6 @@ const WhatsAppButton: React.FC = () => {
         "Membership inquiry",
         "Visit schedule",
         "Personal training info",
-        "Class timings"
     ];
 
     const handleQuickMessage = (msg: string) => {
