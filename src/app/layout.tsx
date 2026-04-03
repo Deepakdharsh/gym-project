@@ -39,20 +39,20 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://fitnessstudiokoorachundu.com",
     siteName: "FITNESS STUDIO Koorachundu",
-    title: "FITNESS STUDIO Koorachundu | Best Gym in Kerala",
+    title: "FITNESS STUDIO Koorachundu | Gym ",
     description: "Premier fitness center in Koorachundu offering professional training, modern equipment, and personalized fitness programs. Join us today!",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "FITNESS STUDIO Koorachundu - Best Gym in Kerala"
+        alt: "FITNESS STUDIO Koorachundu - Gym "
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "FITNESS STUDIO Koorachundu | Best Gym in Kerala",
+    title: "FITNESS STUDIO Koorachundu | Gym ",
     description: "Premier fitness center in Koorachundu offering professional training and modern equipment.",
     images: ["/twitter-image.jpg"],
   },
