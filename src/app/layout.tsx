@@ -10,7 +10,7 @@ import Script from "next/script";
 export const metadata: Metadata = {
   metadataBase: new URL('https://fitnessstudiokoorachundu.com'),
   title: {
-    default: "FITNESS STUDIO Koorachundu | Best Gym in Kerala | Fitness Center Balussery",
+    default: "FITNESS STUDIO Koorachundu | Gym ",
     template: "%s | FITNESS STUDIO Koorachundu"
   },
   description: "Join FITNESS STUDIO Koorachundu - Premier gym in Kerala offering state-of-the-art equipment, personal training, group classes, and expert fitness guidance. Located in Balussery Rd, Kanthalad. Call +91 90741 98396",
