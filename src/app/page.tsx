@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "Welcome to FITNESS STUDIO Koorachundu - Your premier fitness destination in Kerala. Modern equipment, expert trainers, and personalized fitness programs. Start your fitness journey today!",
   keywords: "gym Koorachundu, fitness center Kerala, personal training, group classes, strength training, cardio equipment",
   openGraph: {
-    title: "FITNESS STUDIO Koorachundu | Best Gym in Kerala",
+    title: "FITNESS STUDIO Koorachundu | Gym ",
     description: "Transform your fitness journey at FITNESS STUDIO Koorachundu. Professional trainers, modern facilities, flexible membership plans.",
     url: "https://fitnessstudiokoorachundu.com",
   }
