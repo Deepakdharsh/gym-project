@@ -26,17 +26,17 @@ const ContactUs: React.FC = () => {
         {
             icon: <Phone size={24} className="text-[#E4480B]" />,
             title: "Phone",
-            detail: "+91 90741 98396",
+            detail: process.env.NEXT_PUBLIC_CONTACT_PHONE || "",
             subDetail: "Mon-Sat 6am-10pm",
-            link: "tel:+919074198396"
+            link: `tel:+${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || ""}`
         },
         {
             icon: <MessageCircle size={24} className="text-[#E4480B]" />,
             title: "WhatsApp",
-            detail: "+91 90741 98396",
+            detail: process.env.NEXT_PUBLIC_CONTACT_PHONE || "",
             subDetail: "Chat with us instantly",
             // isWhatsApp: true,
-            link: "https://wa.me/919074198396?text=Hello!%20I'm%20interested%20in%20joining%20FITNESS%20STUDIO%20Koorachundu."
+            link: `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || ""}?text=Hello!%20I'm%20interested%20in%20joining%20FITNESS%20STUDIO%20Koorachundu.`
         },
         {
             icon: <MapPin size={24} className="text-[#E4480B]" />,
@@ -327,7 +327,7 @@ const ContactUs: React.FC = () => {
                             <div className="space-y-3 text-black/80">
                                 <p className="flex items-start gap-2">
                                     <Phone size={16} className="text-[#E4480B] mt-1" />
-                                    <span>+91 90741 98396</span>
+                                    <span>{process.env.NEXT_PUBLIC_CONTACT_PHONE}</span>
                                 </p>
                                 <p className="flex items-start gap-2">
                                     <Mail size={16} className="text-[#E4480B] mt-1" />

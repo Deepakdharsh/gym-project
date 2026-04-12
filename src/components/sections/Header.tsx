@@ -43,7 +43,7 @@ export default function Navbar() {
 
           {/* Join Button Desktop */}
           <a
-            href="https://wa.me/919074198396?text=Hello!%20I'm%20interested%20in%20joining%20FITNESS%20STUDIO%20Koorachundu."
+            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || ""}?text=Hello!%20I'm%20interested%20in%20joining%20FITNESS%20STUDIO%20Koorachundu.`}
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-2 bg-[#E4480B] text-white font-bold shadow hover:scale-105 transition-transform duration-300"
@@ -117,7 +117,7 @@ export default function Navbar() {
 
             {/* Join Button Mobile */}
             <a
-              href="https://wa.me/919074198396?text=Hello!%20I'm%20interested%20in%20joining%20FITNESS%20STUDIO%20Koorachundu."
+              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || ""}?text=Hello!%20I'm%20interested%20in%20joining%20FITNESS%20STUDIO%20Koorachundu.`}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 px-8 py-3 bg-[#E4480B] text-white text-base font-bold shadow hover:scale-105 transition-transform duration-300"

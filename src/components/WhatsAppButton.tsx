@@ -8,7 +8,7 @@ const WhatsAppButton: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     // WhatsApp phone number (remove spaces and special chars for the link)
-    const phoneNumber = "919074198396"; // +91 90741 98396
+    const phoneNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || ""; // From .env
     const message = encodeURIComponent("Hello! I'm interested in joining FITNESS STUDIO Koorachundu. Can you provide more information?");
     const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
 

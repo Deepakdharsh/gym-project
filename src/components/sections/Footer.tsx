@@ -36,7 +36,7 @@ const Footer = () => {
                 Connect
               </span>
               <ul className="flex flex-col gap-3 sm:gap-4">
-                <li><a href="tel:+919074198396" className="text-[13px] sm:text-[14px] font-[600] uppercase tracking-wider hover:text-primary transition-colors">+91 90741 98396</a></li>
+                <li><a href={`tel:+${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || ""}`} className="text-[13px] sm:text-[14px] font-[600] uppercase tracking-wider hover:text-primary transition-colors">{process.env.NEXT_PUBLIC_CONTACT_PHONE}</a></li>
                 <li><a href="mailto:info@fitnessstudio.com" className="text-[13px] sm:text-[14px] font-[600] uppercase tracking-wider hover:text-primary transition-colors break-all">info@fitnessstudio.com</a></li>
                 <li className="flex gap-3 sm:gap-4 mt-2">
                   <a href="#" className="hover:text-primary transition-colors"><Facebook size={18} /></a>

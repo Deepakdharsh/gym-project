@@ -11,7 +11,7 @@ export default function StructuredData() {
         "image": "https://fitnessstudiokoorachundu.com/og-image.jpg",
         "logo": "https://fitnessstudiokoorachundu.com/logo.png",
         "url": "https://fitnessstudiokoorachundu.com",
-        "telephone": "+919074198396",
+        "telephone": `+${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || ""}`,
         "email": "info@fitnessstudio.com",
         "priceRange": "₹₹",
         "address": {
